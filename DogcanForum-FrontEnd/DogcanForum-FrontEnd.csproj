@@ -16,6 +16,7 @@
   <ItemGroup>
     <Content Include="gulpfile.js" />
     <Content Include="headerIcon\sample.html" />
+    <Content Include="header\header.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="lib\" />
@@ -25,6 +26,9 @@
     <None Include="bundle.json" />
     <Content Include="headerIcon\headerIcon.less" />
     <Content Include="headerIcon\sample.less" />
+    <Content Include="header\headerIcon.less" />
+    <Content Include="header\headerLayout.less" />
+    <Content Include="header\sample.less" />
     <None Include="package.json" />
   </ItemGroup>
   <PropertyGroup>

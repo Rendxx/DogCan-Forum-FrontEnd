@@ -15,7 +15,8 @@
       "src": "src/less",
       "dest": "css",
       "test": "test",
-      "headerIcon": "headerIcon"
+      "headerIcon": "headerIcon",
+      "header": "header"
     }
   },
 
@@ -28,7 +29,8 @@
       "#dest#/jquery": "#src#/jquery/dist/jquery*.{js,map}"
     },
     "less": {
-      "#headerIcon#/sample": [ "#headerIcon#/sample.less" ,"#headerIcon#/headerIcon.less" ]
+      "#headerIcon#/sample": [ "#headerIcon#/sample.less" ,"#headerIcon#/headerIcon.less" ],
+      "#header#/header": [ "#header#/sample.less" ,"#header#/headerLayout.less","#header#/headerIcon.less" ]
     },
     "js": {
     }
