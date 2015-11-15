@@ -29,18 +29,25 @@
     <Content Include="bower.json" />
     <Content Include="bundle.json" />
     <Content Include="gulpfile.js" />
+    <Content Include="layout\r2.desktop.script.js" />
+    <Content Include="layout\r2.desktop.script.min.js" />
+    <Content Include="layout\r2.desktop.style.css" />
+    <Content Include="layout\r2.mobile.script.js" />
+    <Content Include="layout\r2.mobile.script.min.js" />
+    <Content Include="layout\r2.mobile.style.css" />
     <Content Include="src\less\layout\header\headerIcon.less" />
     <Content Include="src\less\layout\header\headerLayout.less" />
     <Content Include="src\less\layout\layout.less" />
     <Content Include="package.json" />
-    <Content Include="templates\index.html" />
-    <Content Include="templates\layout\_layout.html" />
-    <Content Include="templates\layout\_partial_header.html" />
+    <Content Include="templates\index.desktop.html" />
+    <Content Include="templates\layout\_layout.desktop.html" />
+    <Content Include="templates\layout\_partial_header.desktop.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="layout\" />
     <Folder Include="src\less\layout\" />
     <Folder Include="src\less\layout\header\" />
     <Folder Include="css\" />
