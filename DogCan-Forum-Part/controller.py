@@ -1,9 +1,17 @@
 ﻿from flask import Flask, render_template, send_from_directory
 app = Flask(__name__)
 
-@app.route("/desktop")
-def layout_header():
-    return render_template('index.desktop.html', title="DogCan Forum")
+@app.route("/forum")
+def forum():
+    return render_template('forum/index.desktop.html', title="DogCan Forum", category="1")
+
+@app.route("/tool")
+def tool():
+    return render_template('tool/index.desktop.html', title="DogCan Forum", category="2")
+
+@app.route("/about")
+def forum():
+    return render_template('about/index.desktop.html', title="DogCan Forum", category="3")
 
 @app.route('/js/<path:path>')
 def send_js(path):
