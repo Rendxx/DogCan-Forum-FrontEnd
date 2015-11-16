@@ -12,6 +12,7 @@
     },
     "less": {
       "layout": "src/less/layout",
+      "forum": "src/less/forum",
       "dest": "css"
     }
   },
@@ -25,7 +26,8 @@
       "#dest#/jquery": "#src#/jquery/dist/jquery*.{js,map}"
     },
     "less": {
-      "#dest#/layout": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_logo.less","#layout#/_partial_footer.less" ]
+      "#dest#/layout": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_footer.less" ],
+      "#dest#/forum": [ "#forum#/_partial_logo.less","#forum#/_partial_list.less" ]
     },
     "js": {
     }

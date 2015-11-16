@@ -1,4 +1,8 @@
 ﻿{% extends "layout/_layout.desktop.html" %}
-{% include "forum/_partial_logo.html" %}
+{% block header %}
+<link type="text/css" rel="stylesheet" href="/css/forum.css" />
+{% endblock %}
 {% block content %}
+    {% include "forum/_partial_logo.html" %}
+    {% include "forum/_partial_list.html" %}
 {% endblock %}
