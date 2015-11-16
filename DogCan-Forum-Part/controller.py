@@ -17,6 +17,10 @@ def send_css(path):
 def send_lib(path):
     return send_from_directory('lib', path)
 
+@app.route('/image/<path:path>')
+def send_image(path):
+    return send_from_directory('image', path)
+
 @app.route('/layout/<path:path>')
 def send_layout(path):
     return send_from_directory('layout', path)

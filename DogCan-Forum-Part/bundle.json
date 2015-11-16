@@ -25,7 +25,7 @@
       "#dest#/jquery": "#src#/jquery/dist/jquery*.{js,map}"
     },
     "less": {
-      "#dest#/layout": [ "#layout#/layout.less" ,"#layout#/header/headerLayout.less","#layout#/header/headerIcon.less" ]
+      "#dest#/layout": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_logo.less" ]
     },
     "js": {
     }

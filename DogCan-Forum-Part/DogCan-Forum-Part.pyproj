@@ -29,17 +29,19 @@
     <Content Include="bower.json" />
     <Content Include="bundle.json" />
     <Content Include="gulpfile.js" />
+    <Content Include="image\dogcan-forum-logo.png" />
     <Content Include="layout\r2.desktop.script.js" />
     <Content Include="layout\r2.desktop.script.min.js" />
     <Content Include="layout\r2.desktop.style.css" />
     <Content Include="layout\r2.mobile.script.js" />
     <Content Include="layout\r2.mobile.script.min.js" />
     <Content Include="layout\r2.mobile.style.css" />
-    <Content Include="src\less\layout\header\headerIcon.less" />
-    <Content Include="src\less\layout\header\headerLayout.less" />
-    <Content Include="src\less\layout\layout.less" />
+    <Content Include="src\less\layout\_partial_logo.less" />
+    <Content Include="src\less\layout\_partial_header.less" />
+    <Content Include="src\less\layout\_layout.less" />
     <Content Include="package.json" />
     <Content Include="templates\index.desktop.html" />
+    <Content Include="templates\layout\_partial_logo.html" />
     <Content Include="templates\layout\_layout.desktop.html" />
     <Content Include="templates\layout\_partial_header.desktop.html" />
   </ItemGroup>
@@ -48,8 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="layout\" />
+    <Folder Include="image\" />
     <Folder Include="src\less\layout\" />
-    <Folder Include="src\less\layout\header\" />
     <Folder Include="css\" />
     <Folder Include="lib\" />
     <Folder Include="src\less\" />
