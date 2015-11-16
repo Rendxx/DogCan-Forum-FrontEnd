@@ -3,15 +3,15 @@ app = Flask(__name__)
 
 @app.route("/forum")
 def forum():
-    return render_template('forum/index.desktop.html', title="DogCan Forum", category="1")
+    return render_template('forum/index.desktop.html', title="DogCan Forum", pageIdx="forum")
 
 @app.route("/tool")
 def tool():
-    return render_template('tool/index.desktop.html', title="DogCan Forum", category="2")
+    return render_template('tool/index.desktop.html', title="DogCan Forum", pageIdx="tool")
 
 @app.route("/about")
-def forum():
-    return render_template('about/index.desktop.html', title="DogCan Forum", category="3")
+def about():
+    return render_template('about/index.desktop.html', title="DogCan Forum", pageIdx="about")
 
 @app.route('/js/<path:path>')
 def send_js(path):
