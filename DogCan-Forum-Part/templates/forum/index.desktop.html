@@ -1,8 +1,19 @@
-﻿{% extends "layout/_layout.desktop.html" %}
+﻿{% extends "layout/_layout_forum.desktop.html" %}
+
 {% block header %}
 <link type="text/css" rel="stylesheet" href="/css/forum.css" />
 {% endblock %}
+
+{% block script %}
+<script type="text/javascript" src="/lib/ScrollTask.js"></script>
+<script type="text/javascript" src="/js/forum.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var layoutManager = DogCan.Forum.Layout();
+    });
+</script>
+{% endblock %}
+
 {% block content %}
-    {% include "forum/_partial_logo.html" %}
     {% include "forum/_partial_list.html" %}
 {% endblock %}

@@ -7,13 +7,13 @@
       "dest": "lib"
     },
     "js": {
-      "src": "src/js",
-      "dest": "js"
+      "dest": "js",
+      "forum": "src/js/forum"
     },
     "less": {
+      "dest": "css",
       "layout": "src/less/layout",
-      "forum": "src/less/forum",
-      "dest": "css"
+      "forum": "src/less/forum"
     }
   },
 
@@ -23,13 +23,17 @@
   // e.g. "#dest#" in [bundle.bower] will only match the "dest" string in [path.bower]
   "bundle": {
     "bower": {
-      "#dest#/jquery": "#src#/jquery/dist/jquery*.{js,map}"
+      "#dest#/jquery": "#src#/jquery/dist/jquery*.{js,map}",
+      "#dest#/scrollTask": "#src#/scroll-task/js/ScrollTask*.{js,map}",
+      "#dest#/jqueryMouseWheel": "#src#/jquery-mousewheel/jquery.mousewheel*.{js,map}"
     },
     "less": {
+      "#dest#/layout_forum": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_forum.less","#layout#/_partial_footer.less" ],
       "#dest#/layout": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_footer.less" ],
-      "#dest#/forum": [ "#forum#/_partial_logo.less","#forum#/_partial_list.less" ]
+      "#dest#/forum": [ "#forum#/_partial_list.less" ]
     },
     "js": {
+      "#dest#/forum": [ "#forum#/layout.js" ]
     }
   }
 }

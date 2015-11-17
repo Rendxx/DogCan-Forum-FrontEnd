@@ -1,27 +1,13 @@
 {
   "name": "bower-package-name",
   "description": "",
-  "main": [
-  ],
   "dependencies": {
-    "jquery": "1.11.2"
+    "jquery": "1.11.2",
+    "scroll-task": "^0.0.1",
+    "jquery-mousewheel": "^3.1.13"
   },
-  "moduleType": [
-    "globals"
-  ],
-  "keywords": [
-  ],
   "authors": [
   ],
   "license": "MIT",
-  "ignore": [
-    "*",
-    "!js/*",
-    "!css/*"
-  ],
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "private": false
+  "private": true
 }
