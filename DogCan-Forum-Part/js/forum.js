@@ -13,11 +13,11 @@ window.DogCan.Forum.Layout = function () {
 
     var setupFunc = function () {
         $$.scroll.set(html['list'][0], 200, function () {
-            html['header'].addClass('fixed_');
+            html['header'].addClass('small_');
         }, $$.scroll.REFERENCE.TOP, $$.scroll.DIRECTION.DOWN);
 
         $$.scroll.set(html['list'][0], 200, function () {
-            html['header'].removeClass('fixed_');
+            html['header'].removeClass('small_');
         }, $$.scroll.REFERENCE.TOP, $$.scroll.DIRECTION.UP);
     };
 

@@ -30,7 +30,7 @@
     "less": {
       "#dest#/layout_forum": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_forum.less","#layout#/_partial_footer.less" ],
       "#dest#/layout": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_footer.less" ],
-      "#dest#/forum": [ "#forum#/_partial_list.less" ]
+      "#dest#/forum": [ "#forum#/_partial_list.less", "#forum#/_partial_logo.less" ]
     },
     "js": {
       "#dest#/forum": [ "#forum#/layout.js" ]

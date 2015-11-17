@@ -31,6 +31,8 @@
     <Content Include="gulpfile.js" />
     <Content Include="image\dogcan-forum-logo.png" />
     <Content Include="image\forum-sample.png" />
+    <Content Include="image\img-grass-2.jpg" />
+    <Content Include="image\img-grass.jpg" />
     <Content Include="layout\r2.desktop.script.js" />
     <Content Include="layout\r2.desktop.script.min.js" />
     <Content Include="layout\r2.desktop.style.css" />
@@ -38,19 +40,18 @@
     <Content Include="layout\r2.mobile.script.min.js" />
     <Content Include="layout\r2.mobile.style.css" />
     <Content Include="src\js\forum\layout.js" />
+    <Content Include="src\less\forum\_partial_logo.less" />
     <Content Include="src\less\forum\_partial_list.less" />
     <Content Include="src\less\layout\_partial_footer.less" />
-    <Content Include="src\less\layout\_partial_forum.less" />
     <Content Include="src\less\layout\_partial_header.less" />
     <Content Include="src\less\layout\_layout.less" />
     <Content Include="package.json" />
     <Content Include="templates\about\index.desktop.html" />
     <Content Include="templates\forum\index.desktop.html" />
+    <Content Include="templates\forum\_partial_logo.html" />
     <Content Include="templates\forum\_partial_list.html" />
-    <Content Include="templates\layout\_layout_forum.desktop.html" />
     <Content Include="templates\layout\_partial_footer.html" />
     <Content Include="templates\layout\_layout.desktop.html" />
-    <Content Include="templates\layout\_partial_header_forum.desktop.html" />
     <Content Include="templates\layout\_partial_header.desktop.html" />
     <Content Include="templates\tool\index.desktop.html" />
   </ItemGroup>
