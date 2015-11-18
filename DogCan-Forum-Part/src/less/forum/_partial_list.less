@@ -1,14 +1,143 @@
-﻿.block-blank{
-    height:700px;
-}
+﻿.block-list {
+    z-index: 30;
+    @color-normal: #999;
+    @color-hover: #ff9900;
+    @color-actived: #ff6600;
 
-.block-list{
-    z-index:30;
-    .grid-list{
-        height:1000px;
-        background-image:url(/image/forum-sample.png);
-        background-position:center center;
-        background-repeat:no-repeat;
-        background-color:#fff;
+    .grid-list {
+        height: auto;
+
+        table.topicList {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            thead.header_ {
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                text-align: left;
+                font-weight: 400;
+
+                tr {
+                    th {
+                        color: #666;
+                        font-weight: 400;
+                        border-bottom: 1px solid #999;
+                        letter-spacing: 5px;
+
+                        &.clickable_ {
+                            -moz-transition: 0.2s;
+                            -o-transition: 0.2s;
+                            -webkit-transition: 0.2s;
+                            transition: 0.2s;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: @color-hover;
+                                border-bottom: 1px solid @color-hover;
+                            }
+                        }
+                    }
+                }
+            }
+
+            tbody.content_ {
+                height: 25px;
+                line-height: 25px;
+                font-size: 14px;
+                text-align: left;
+
+                tr {
+                    td {
+                        border-bottom: 1px solid #eee;
+                        color: #999;
+
+                        &.category_ {
+                        }
+
+                        &.title_ {
+                            color: #000;
+                            cursor: pointer;
+
+                            span {
+                            }
+
+                            &:hover {
+                                color: #ff6600;
+                            }
+                        }
+
+                        &.user_ {
+                            .portrait_ {
+                                display: block;
+                                width: 25px;
+                                height: 25px;
+                                float: left;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        &.reply_ {
+                            font-family: Arial;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            th, td {
+                padding: 12px 5px;
+
+                &.category_ {
+                    width: 100px;
+                    padding-left: 25px;
+                }
+
+                &.title_ {
+                    width: auto;
+                }
+
+                &.user_ {
+                    width: 150px;
+                }
+
+                &.reply_ {
+                    width: 100px;
+                    text-align: center;
+                }
+
+                &.activity_ {
+                    width: 100px;
+                    padding-right: 25px;
+                }
+            }
+        }
+
+        .topicLoading {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 140px;
+            line-height: 140px;
+            text-align: center;
+            font-size: 20px;
+            font-family: Calibri;
+            font-weight: 300;
+            color: #ff9900;
+        }
+
+        .topicEnd {
+            height: 80px;
+            line-height: 80px;
+            padding-left: 24px;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
     }
 }

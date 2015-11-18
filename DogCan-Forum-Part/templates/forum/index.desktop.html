@@ -9,12 +9,15 @@
 <script type="text/javascript" src="/js/forum.js"></script>
 <script type="text/javascript">
     $(function () {
-        var layoutManager = DogCan.Forum.Layout();
+        var forum = new DogCan.Forum.Manager({
+            topic: $.parseJSON('{{ topic|tojson|safe }}')
+        });
     });
 </script>
 {% endblock %}
 
 {% block content %}
     {% include "forum/_partial_logo.html" %}
+    {% include "forum/_partial_category.html" %}
     {% include "forum/_partial_list.html" %}
 {% endblock %}

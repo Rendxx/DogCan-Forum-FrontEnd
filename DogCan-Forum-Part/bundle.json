@@ -30,10 +30,10 @@
     "less": {
       "#dest#/layout_forum": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_forum.less","#layout#/_partial_footer.less" ],
       "#dest#/layout": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_footer.less" ],
-      "#dest#/forum": [ "#forum#/_partial_list.less", "#forum#/_partial_logo.less" ]
+      "#dest#/forum": [ "#forum#/_partial_list.less", "#forum#/_partial_logo.less", "#forum#/_partial_category.less" ]
     },
     "js": {
-      "#dest#/forum": [ "#forum#/layout.js" ]
+      "#dest#/forum": [ "#forum#/manager.js", "#forum#/category.js", "#forum#/list.js" ]
     }
   }
 }
