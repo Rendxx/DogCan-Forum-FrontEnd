@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "1.11.2",
     "scroll-task": "^0.0.1",
+    "TipBox": "^0.2.3",
     "jquery-mousewheel": "^3.1.13"
   },
   "authors": [

@@ -68,8 +68,10 @@ window.DogCan.Forum.List = function () {
         item.children('.activity_').text(lastTime).attr('title', _data.text.activity.replace('#firstTime#', firstTime).replace('#lastTime#', lastTime));
 
         var portrait = $(_data.html.portrait).attr('src', '/image/portrait/' + author.portrait).appendTo(item.children('.user_'));
+        portrait.tip(author.name);
         for (var i = 0, l = user.length; i < l; i++) {
             portrait = $(_data.html.portrait).attr('src', '/image/portrait/' + user[i].portrait).appendTo(item.children('.user_'));
+            portrait.tip(user[i].name);
         }
         $(_data.html.clear).appendTo(item.children('.user_'));
         item.appendTo(html['content']);

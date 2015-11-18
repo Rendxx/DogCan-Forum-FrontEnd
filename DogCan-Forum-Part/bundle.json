@@ -25,12 +25,13 @@
     "bower": {
       "#dest#/jquery": "#src#/jquery/dist/jquery*.{js,map}",
       "#dest#/scrollTask": "#src#/scroll-task/js/ScrollTask*.{js,map}",
-      "#dest#/jqueryMouseWheel": "#src#/jquery-mousewheel/jquery.mousewheel*.{js,map}"
+      "#dest#/jqueryMouseWheel": "#src#/jquery-mousewheel/jquery.mousewheel*.{js,map}",
+      "#dest#/tipBox": "#src#/TipBox/js/TipBox*.{js,map}"
     },
     "less": {
       "#dest#/layout_forum": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_forum.less","#layout#/_partial_footer.less" ],
       "#dest#/layout": [ "#layout#/_layout.less" ,"#layout#/_partial_header.less" ,"#layout#/_partial_footer.less" ],
-      "#dest#/forum": [ "#forum#/_partial_list.less", "#forum#/_partial_logo.less", "#forum#/_partial_category.less" ]
+      "#dest#/forum": [ "#forum#/_partial_list.less", "#forum#/_partial_loading.less", "#forum#/_partial_logo.less", "#forum#/_partial_category.less" ]
     },
     "js": {
       "#dest#/forum": [ "#forum#/manager.js", "#forum#/category.js", "#forum#/list.js" ]

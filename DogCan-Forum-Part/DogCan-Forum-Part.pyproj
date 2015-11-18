@@ -53,6 +53,7 @@
     <Content Include="src\js\forum\category.js" />
     <Content Include="src\js\forum\manager.js" />
     <Content Include="src\less\forum\_partial_category.less" />
+    <Content Include="src\less\forum\_partial_loading.less" />
     <Content Include="src\less\forum\_partial_logo.less" />
     <Content Include="src\less\forum\_partial_list.less" />
     <Content Include="src\less\layout\_partial_footer.less" />
