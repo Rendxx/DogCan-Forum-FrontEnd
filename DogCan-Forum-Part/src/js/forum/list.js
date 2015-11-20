@@ -13,7 +13,7 @@ window.DogCan.Forum.List = function () {
     // load from server
     this.load = function () {
         $.ajax({
-            url: "/forum/topic/" + count,
+            url: _data.url.list + count,
             success: function (data) {
                 if (data == null) {
                     html['loading'].hide();
@@ -63,14 +63,16 @@ window.DogCan.Forum.List = function () {
 
         var item = $(_data.html.item);
         item.children('.category_').text(category);
-        item.find('.title_ span').text(title);
+        item.find('.title_ a').text(title).attr('href', _data.url.post + id);
         item.children('.reply_').text(reply).attr('title', _data.text.reply.replace('#reply#', reply).replace('#view#', view));
         item.children('.activity_').text(lastTime).attr('title', _data.text.activity.replace('#firstTime#', firstTime).replace('#lastTime#', lastTime));
 
-        var portrait = $(_data.html.portrait).attr('src', '/image/portrait/' + author.portrait).appendTo(item.children('.user_'));
+        var portrait = $(_data.html.portrait).attr('href', _data.url.user + author.id).appendTo(item.children('.user_'))
+        portrait.children('img').attr('src', '/image/portrait/' + author.portrait);
         portrait.tip(author.name);
         for (var i = 0, l = user.length; i < l; i++) {
-            portrait = $(_data.html.portrait).attr('src', '/image/portrait/' + user[i].portrait).appendTo(item.children('.user_'));
+            portrait = $(_data.html.portrait).attr('href', _data.url.user + user[i].id).appendTo(item.children('.user_'));
+            portrait.children('img').attr('src', '/image/portrait/' + user[i].portrait);
             portrait.tip(user[i].name);
         }
         $(_data.html.clear).appendTo(item.children('.user_'));
@@ -104,19 +106,24 @@ window.DogCan.Forum.List = function () {
 
 window.DogCan.Forum.List.Data = {
     html: {
-        item: '<tr>'+
-                    '<td class="category_"></td>'+
-                    '<td class="title_"><span></span></td>'+
-                    '<td class="user_"></td>'+
-                    '<td class="reply_"></td>'+
-                    '<td class="activity_"></td>'+
+        item: '<tr>' +
+                    '<td class="title_"><a></a></td>' +
+                    '<td class="category_"></td>' +
+                    '<td class="user_"></td>' +
+                    '<td class="reply_"></td>' +
+                    '<td class="activity_"></td>' +
                 '</tr>',
-        portrait: '<img class="portrait_" width="25" height="25"/>',
+        portrait: '<a class="portrait_" target="_blank"><img width="25" height="25"/></a>',
         clear: '<div class="clear"></div>'
     },
     text: {
-        reply: "回复数: #reply#\r\n观看数: #view#",
-        activity: "立帖时间: #firstTime#\r\n最新回复: #lastTime#"
+        reply: '回复数: #reply#\r\n观看数: #view#',
+        activity: '立帖时间: #firstTime#\r\n最新回复: #lastTime#'
     },
-    queryCount :10
+    url: {
+        list: '/forum/topic/',
+        post: '/forum/post/',
+        user: '/user/'
+    },
+    queryCount: 10
 };

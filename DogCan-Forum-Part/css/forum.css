@@ -1,0 +1,413 @@
+.block-list {
+  z-index: 30;
+}
+.block-list .grid-list {
+  height: auto;
+}
+.block-list .grid-list table.topicList {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.block-list .grid-list table.topicList thead.header_ {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+}
+.block-list .grid-list table.topicList thead.header_ tr th {
+  color: #666;
+  font-weight: 400;
+  border-bottom: 1px solid #999;
+  letter-spacing: 5px;
+}
+.block-list .grid-list table.topicList thead.header_ tr th.clickable_ {
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.block-list .grid-list table.topicList thead.header_ tr th.clickable_:hover {
+  color: #ff9900;
+  border-bottom: 1px solid #ff9900;
+}
+.block-list .grid-list table.topicList tbody.content_ {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: left;
+}
+.block-list .grid-list table.topicList tbody.content_ tr td {
+  border-bottom: 1px solid #eee;
+  color: #999;
+}
+.block-list .grid-list table.topicList tbody.content_ tr td.title_ a {
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+.block-list .grid-list table.topicList tbody.content_ tr td.title_ a:hover {
+  color: #ff6600;
+}
+.block-list .grid-list table.topicList tbody.content_ tr td.title_ a:visited {
+  color: #999;
+}
+.block-list .grid-list table.topicList tbody.content_ tr td.user_ a.portrait_ {
+  display: block;
+  width: 25px;
+  height: 25px;
+  float: left;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.block-list .grid-list table.topicList tbody.content_ tr td.user_ a.portrait_ img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.block-list .grid-list table.topicList tbody.content_ tr td.reply_ {
+  font-family: Arial;
+  font-weight: bold;
+}
+.block-list .grid-list table.topicList th,
+.block-list .grid-list table.topicList td {
+  padding: 12px 5px;
+}
+.block-list .grid-list table.topicList th.category_,
+.block-list .grid-list table.topicList td.category_ {
+  width: 100px;
+  padding-left: 25px;
+}
+.block-list .grid-list table.topicList th.title_,
+.block-list .grid-list table.topicList td.title_ {
+  width: auto;
+}
+.block-list .grid-list table.topicList th.user_,
+.block-list .grid-list table.topicList td.user_ {
+  width: 150px;
+}
+.block-list .grid-list table.topicList th.reply_,
+.block-list .grid-list table.topicList td.reply_ {
+  width: 100px;
+  text-align: center;
+}
+.block-list .grid-list table.topicList th.activity_,
+.block-list .grid-list table.topicList td.activity_ {
+  width: 100px;
+  padding-right: 25px;
+}
+.block-list .grid-list .topicLoading {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Calibri;
+  font-weight: 300;
+  color: #ff9900;
+}
+.block-list .grid-list .topicEnd {
+  height: 80px;
+  line-height: 80px;
+  padding-left: 24px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.block-list .grid-list .topicLoading .loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  margin-top: -25px;
+  margin-left: -25px;
+  background-color: #eee;
+  border-radius: 999px;
+}
+.block-list .grid-list .topicLoading .loading-icon:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  height: 46px;
+  width: 46px;
+  background: none repeat scroll 0 0 #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.block-list .grid-list .topicLoading .loading-icon::before {
+  content: "载入帖子...";
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  width: 80px;
+  margin-top: -10px;
+  color: #999;
+  font-size: 13px;
+  font-family: 'Microsoft YaHei';
+  font-weight: normal;
+}
+.block-list .grid-list .topicLoading .loading-icon > div {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.block-list .grid-list .topicLoading .loading-icon .anim_ {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 999px;
+  background: none repeat scroll 0 0 #ff6600;
+  opacity: 0.8;
+  -webkit-transform-origin: 0 50% 0;
+  -moz-transform-origin: 0 50% 0;
+  -ms-transform-origin: 0 50% 0;
+  -o-transform-origin: 0 50% 0;
+  transform-origin: 0 50% 0;
+}
+.block-list .grid-list .topicLoading .loading-icon .left_ {
+  left: 0;
+}
+.block-list .grid-list .topicLoading .loading-icon .left_ .anim_ {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-animation: loading-rotate-left 2s linear 0s infinite;
+  -o-animation: loading-rotate-left 2s linear 0s infinite;
+  -webkit-animation: loading-rotate-left 2s linear 0s infinite;
+  animation: loading-rotate-left 2s linear 0s infinite;
+}
+.block-list .grid-list .topicLoading .loading-icon .right_ {
+  left: 50%;
+}
+.block-list .grid-list .topicLoading .loading-icon .right_ .anim_ {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  left: -100%;
+  -webkit-transform-origin: 100% 50% 0;
+  -moz-transform-origin: 100% 50% 0;
+  -ms-transform-origin: 100% 50% 0;
+  -o-transform-origin: 100% 50% 0;
+  transform-origin: 100% 50% 0;
+  -moz-animation: loading-rotate-right 2s linear 1s infinite;
+  -o-animation: loading-rotate-right 2s linear 1s infinite;
+  -webkit-animation: loading-rotate-right 2s linear 1s infinite;
+  animation: loading-rotate-right 2s linear 1s infinite;
+}
+@-moz-keyframes loading-rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading-rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loading-rotate-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading-rotate-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-rotate-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.block-logo .grid-logo {
+  height: 600px;
+}
+.block-logo .grid-logo .logo_ {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-top: -100px;
+  margin-left: -180px;
+  background-image: url('/image/dogcan-forum-logo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.block-blank {
+  height: 500px;
+}
+
+.block-category {
+  z-index: 30;
+}
+.block-category .grid-category {
+  height: 60px;
+  background-color: #fff;
+}
+.block-category .grid-category .categoryList {
+  border-top: 1px solid #eee;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.block-category .grid-category .categoryList .item_ {
+  display: block;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  color: #999;
+  border-top: 1px solid #ccc;
+  float: left;
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin: -1px 0 0 0;
+  padding-left: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-right: 1px;
+  cursor: pointer;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.block-category .grid-category .categoryList .item_:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 1px;
+  height: 2px;
+  background-color: #fff;
+}
+.block-category .grid-category .categoryList .item_.latest_ {
+  width: 100px;
+}
+.block-category .grid-category .categoryList .item_.team_ {
+  width: 130px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVQ4jcWQvUpDQRCFv9kVxNJoZWy0svXnDazVPv1CglimlXRpLRQS7y0E38BUIvoKgiCkS6NWFjZi451jYS5EuAk24qlmds/5Zmfhv2Vl0el0Qr1e33T3I2AHmJf0BgxijJcppVEVIJTFONwGFoEToA30zGzb3bt5nteqAHNlMZ68EEI4TCk9ledZll27+1lRFA3gdOoLgC1JV5NhgHE/AJozV5AUgecqE/AK1GcCgI8QwsoUwLKkl5kAM7uWdJBl2eqkYdzvmVm/CmATxjV37wILfO/8KmnJzPaBD0k3McZRSumuEgCQ53mtKIqGpJaZrUh6MbO+pHczO5b0GWNMk5AfgGnq9Xq7wLmZrQNDd2+0Wq37H38wS81m8zbGmIAhsBFCuCjvfgUASCnduXsDeJD0+Nvc3+sLYmmFGjBbKsoAAAAASUVORK5CYII=");
+  background-position: 110px center;
+  background-repeat: no-repeat;
+}
+.block-category .grid-category .categoryList .item_:hover {
+  color: #ff9900;
+  border-top: 1px solid #ff9900;
+}
+.block-category .grid-category .categoryList .item_:hover.team_ {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABD0lEQVQ4jcXRu0pDQRAA0LP3CpJWrRIbrWx9/IG12qf2gg8sbcXOH1DwVQj+gamCmF8QBMHORq1EbCSNuWthojchCWnEqWbYmbPsDv8doZPEfYmKebkdLGFc9I6a1GXIPA4HzizK7aKEGl5Fk4JVNKW2wrq3XmDsJ/u+uSSxHTJPBbgud6SlisNeICnkC6Kr4jC06xo2+j3hF4hSPPdrwisqwwGaEuUBwJToZTgQ1EVr8cx0saFdrwhO+gHFLczIHRi0heha6jFkGn0BiOcmtFRFm4Ky6EVwIvoQ7Ik+pbIi0gUMinhsGaeCWTzIVcOm2+4/GBJhw41UhgfMSVx0zkYCIGQaclXcie5Hnfv7+AJMzVJL7/cc6wAAAABJRU5ErkJggg==");
+}
+.block-category .grid-category .categoryList .item_.actived {
+  color: #ff6600;
+  border-top: 1px solid #ff6600;
+}
+.block-category .grid-category .categoryList .item_.actived.team_ {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGUlEQVQ4jcXRu0pcARDG8d+cFYKtWhmbpLL18gapo/22riRRLG3FzhfQYvUIAd/ArSToKwQCATubTSoJNmLjnknh7ShnF5uQr/pgZv5z438rHkxuK/TNKWxIi3gjXEk96ShKF6MBHQsKm9K40MOlyqSwJNwYWItDf14Cxh7dXedxaT0O9GvgE+xpaWP3JaCo+XnpOMqnYohSX+hJn5tWqANaWn41JeESb5sCTyukG2l6CGBK+D16gnCC5eyYqSdkx4z0Ed0mQP0L7xR2hn6h8g0XUTprBECumLi/9hdp+n7srsq1whZuVVbrkGeAYcpPPkj7eI9zA+049P35DUYouk5VVnGOWYWvD7FXASBKZwba0g/8fG3dv9dfhzRVtzwZDN4AAAAASUVORK5CYII=");
+}
+
+/*# sourceMappingURL=forum.css.map */

@@ -28,6 +28,12 @@
   <ItemGroup>
     <Content Include="bower.json" />
     <Content Include="bundle.json" />
+    <Content Include="css\forum.css" />
+    <Content Include="css\forum.css.map" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\layout.css.map" />
+    <Content Include="css\layout_forum.css" />
+    <Content Include="css\layout_forum.css.map" />
     <Content Include="gulpfile.js" />
     <Content Include="image\dogcan-forum-logo.png" />
     <Content Include="image\forum-sample.png" />
@@ -43,12 +49,29 @@
     <Content Include="image\portrait\user7.png" />
     <Content Include="image\portrait\user8.png" />
     <Content Include="image\portrait\user9.png" />
+    <Content Include="js\forum.js" />
+    <Content Include="js\forum.js.map" />
+    <Content Include="js\forum.min.js" />
+    <Content Include="js\forum.min.js.map" />
     <Content Include="layout\r2.desktop.script.js" />
     <Content Include="layout\r2.desktop.script.min.js" />
     <Content Include="layout\r2.desktop.style.css" />
     <Content Include="layout\r2.mobile.script.js" />
     <Content Include="layout\r2.mobile.script.min.js" />
     <Content Include="layout\r2.mobile.style.css" />
+    <Content Include="lib\jquery.js" />
+    <Content Include="lib\jquery.min.js" />
+    <Content Include="lib\jquery.min.map" />
+    <Content Include="lib\jquery.mousewheel.js" />
+    <Content Include="lib\jquery.mousewheel.min.js" />
+    <Content Include="lib\ScrollTask.js" />
+    <Content Include="lib\ScrollTask.js.map" />
+    <Content Include="lib\ScrollTask.min.js" />
+    <Content Include="lib\ScrollTask.min.js.map" />
+    <Content Include="lib\TipBox.js" />
+    <Content Include="lib\TipBox.js.map" />
+    <Content Include="lib\TipBox.min.js" />
+    <Content Include="lib\TipBox.min.js.map" />
     <Content Include="src\js\forum\list.js" />
     <Content Include="src\js\forum\category.js" />
     <Content Include="src\js\forum\manager.js" />
@@ -62,6 +85,7 @@
     <Content Include="package.json" />
     <Content Include="templates\about\index.desktop.html" />
     <Content Include="templates\forum\index.desktop.html" />
+    <Content Include="templates\forum\Post.desktop.html" />
     <Content Include="templates\forum\_partial_category.html" />
     <Content Include="templates\forum\_partial_logo.html" />
     <Content Include="templates\forum\_partial_list.html" />
@@ -69,6 +93,9 @@
     <Content Include="templates\layout\_layout.desktop.html" />
     <Content Include="templates\layout\_partial_header.desktop.html" />
     <Content Include="templates\tool\index.desktop.html" />
+    <Content Include="templates\user\index.desktop.html" />
+    <Content Include="web.config" />
+    <None Include="web.debug.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller.py" />
@@ -91,6 +118,7 @@
     <Folder Include="templates\forum\" />
     <Folder Include="templates\about\" />
     <Folder Include="templates\tool\" />
+    <Folder Include="templates\user\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

@@ -58,26 +58,37 @@
                         }
 
                         &.title_ {
-                            color: #000;
-                            cursor: pointer;
 
-                            span {
-                            }
+                            a {
+                                display: block;
+                                color: #000;
+                                cursor: pointer;
 
-                            &:hover {
-                                color: #ff6600;
+                                &:hover {
+                                    color: #ff6600;
+                                }
+
+                                &:visited {
+                                    color: #999;
+                                }
                             }
                         }
 
                         &.user_ {
-                            .portrait_ {
+                            a.portrait_ {
                                 display: block;
                                 width: 25px;
                                 height: 25px;
                                 float: left;
-                                border-radius: 50%;
                                 cursor: pointer;
                                 margin-right: 5px;
+
+                                img {
+                                    display: block;
+                                    width: 25px;
+                                    height: 25px;
+                                    border-radius: 50%;
+                                }
                             }
                         }
 

@@ -18,6 +18,19 @@ topics = [
     {'id': 9, 'category':'皇马', 'title':'哈梅斯：巴萨状态上佳，但我们是皇马', 'reply': 4, 'view':9, 'lastTime':'2015-2-22', 'firstTime':'2015-2-1', 'author':{'id':7, 'name':'狗能', 'portrait':'user7.png'}, 'user':[{'id':8, 'name':'王好人', 'portrait':'user8.png'},{'id':9, 'name':'高原原', 'portrait':'user9.png'}]}
 ];
 
+users=[
+    {'id':0, 'name':'userA', 'portrait':'user0.png'},
+    {'id':1, 'name':'user 01', 'portrait':'user1.png'},
+    {'id':2, 'name':'user 02', 'portrait':'user2.png'},
+    {'id':3, 'name':'user 03', 'portrait':'user3.png'},
+    {'id':4, 'name':'user 04', 'portrait':'user4.png'},
+    {'id':5, 'name':'user 05', 'portrait':'user5.png'},
+    {'id':6, 'name':'user 06', 'portrait':'user6.png'},
+    {'id':7, 'name':'狗能', 'portrait':'user7.png'},
+    {'id':8, 'name':'王好人', 'portrait':'user8.png'},
+    {'id':9, 'name':'高原原', 'portrait':'user9.png'}
+];
+
 
 @app.route("/forum")
 def forum():
@@ -29,6 +42,15 @@ def forum_topic(idx):
         return ""
     return Response(json.dumps(topics),  mimetype='application/json')
 
+@app.route("/forum/post/<path:idx>")
+def forumPost(idx):
+    title = topics[int(idx)]['title']
+    return render_template('forum/post.desktop.html', title=title, pageIdx="forum")
+
+@app.route("/user/<path:idx>")
+def userIndex(idx):
+    userName = users[int(idx)]['name']
+    return render_template('user/index.desktop.html', title=userName, pageIdx="forum",userName=userName)
 
 @app.route("/tool")
 def tool():
