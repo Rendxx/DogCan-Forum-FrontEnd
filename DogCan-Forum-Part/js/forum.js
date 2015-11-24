@@ -215,8 +215,8 @@ window.DogCan.Forum.List.Data = {
     },
     url: {
         list: '/forum/topic/',
-        post: '/forum/post/',
-        user: '/user/'
+        post: DogCan.Url.Post+'/',
+        user: DogCan.Url.User + '/'
     },
     queryCount: 10
 };
