@@ -53,6 +53,10 @@
     <Content Include="js\forum.js.map" />
     <Content Include="js\forum.min.js" />
     <Content Include="js\forum.min.js.map" />
+    <Content Include="js\layout.js" />
+    <Content Include="js\layout.js.map" />
+    <Content Include="js\layout.min.js" />
+    <Content Include="js\layout.min.js.map" />
     <Content Include="layout\r2.desktop.script.js" />
     <Content Include="layout\r2.desktop.script.min.js" />
     <Content Include="layout\r2.desktop.style.css" />
@@ -75,6 +79,7 @@
     <Content Include="src\js\forum\list.js" />
     <Content Include="src\js\forum\category.js" />
     <Content Include="src\js\forum\manager.js" />
+    <Content Include="src\js\domain.js" />
     <Content Include="src\less\forum\_partial_category.less" />
     <Content Include="src\less\forum\_partial_loading.less" />
     <Content Include="src\less\forum\_partial_logo.less" />
@@ -85,7 +90,7 @@
     <Content Include="package.json" />
     <Content Include="templates\about\index.desktop.html" />
     <Content Include="templates\forum\index.desktop.html" />
-    <Content Include="templates\forum\Post.desktop.html" />
+    <Content Include="templates\post\post.desktop.html" />
     <Content Include="templates\forum\_partial_category.html" />
     <Content Include="templates\forum\_partial_logo.html" />
     <Content Include="templates\forum\_partial_list.html" />
@@ -117,6 +122,7 @@
     <Folder Include="templates\layout\" />
     <Folder Include="templates\forum\" />
     <Folder Include="templates\about\" />
+    <Folder Include="templates\post\" />
     <Folder Include="templates\tool\" />
     <Folder Include="templates\user\" />
   </ItemGroup>

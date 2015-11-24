@@ -45,7 +45,7 @@ def forum_topic(idx):
 @app.route("/forum/post/<path:idx>")
 def forumPost(idx):
     title = topics[int(idx)]['title']
-    return render_template('forum/post.desktop.html', title=title, pageIdx="forum")
+    return render_template('post/post.desktop.html', title=title, pageIdx="forum")
 
 @app.route("/user/<path:idx>")
 def userIndex(idx):

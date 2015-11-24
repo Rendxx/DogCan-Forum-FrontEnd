@@ -8,6 +8,7 @@
     },
     "js": {
       "dest": "js",
+      "src": "src/js",
       "forum": "src/js/forum"
     },
     "less": {
@@ -34,7 +35,8 @@
       "#dest#/forum": [ "#forum#/_partial_list.less", "#forum#/_partial_loading.less", "#forum#/_partial_logo.less", "#forum#/_partial_category.less" ]
     },
     "js": {
-      "#dest#/forum": [ "#forum#/manager.js", "#forum#/category.js", "#forum#/list.js" ]
+      "#dest#/forum": [ "#forum#/manager.js", "#forum#/category.js", "#forum#/list.js" ],
+      "#dest#/layout": [ "#src#/domain.js" ]
     }
   }
 }

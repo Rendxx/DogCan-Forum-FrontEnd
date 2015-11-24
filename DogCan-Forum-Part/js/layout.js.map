@@ -1,0 +1,1 @@
+{"version":3,"sources":["domain.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"layout.js","sourcesContent":["window.DogCan = window.DogCan || {};\r\n\r\nwindow.DogCan.Url = {\r\n    'Forum': '/forum',\r\n    'User': '/user',\r\n    'Tool': '/tool',\r\n    'About': '/about',\r\n    'Post': '/forum/post',\r\n};"],"sourceRoot":"/source/"}
